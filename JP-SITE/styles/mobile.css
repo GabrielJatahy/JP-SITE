@@ -1,0 +1,101 @@
+/*
+CORES
+PRIMEIRO TOM DE LARANJA #E05A00
+ SEGUNDO TOM DE LARANAJA #DB7F00
+ TERCEIRO TOM DE LARANJA #DB8400
+ CINZA #BABDBF
+ PRETO #1F2326
+ BRANCO #F2F2F2
+
+ FONTE PADRAO
+.playfair-display-<uniquifier> {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+*/
+
+/* ELEMENTOS HEADER */
+@media screen and (max-width: 1200px) {
+  header{
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.2)) ,url('../imagens/haderCapaM.jpg.jpg');
+      background-repeat:no-repeat;
+      background-position: center center;
+      background-size: cover;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  header{
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.2)) ,url('../imagens/haderCapaP.jpg\ -\ Copia\ \(2\).jpg');
+      background-repeat:no-repeat;
+      background-position: center center;
+      background-size: cover;
+  }
+}
+
+/*  NAVBAR */
+@media screen and (max-width: 1110px) {
+  header nav#nav-esquerda ul.menu-principal li a{
+    font-size: 90%;
+  }
+}
+
+@media screen and (max-width: 970px) {
+  header nav#nav-esquerda div#logo{
+    margin-left: 1rem;
+  }
+}
+
+/*  MENU HABURGER  */
+
+header nav#nav-esquerda{
+  justify-content: space-between;
+}
+
+header nav#nav-esquerda ul#icone-menu{
+  display: flex;
+  list-style: none;
+}
+
+header nav#nav-esquerda ul#icone-menu li#menuX{
+  display: none;
+  
+}
+
+/*   MENU  */
+
+header nav#nav-esquerda ul.menu-principal{
+  flex-direction: column;
+  width: 80%;
+  height: 70vh;
+  flex-direction: column;
+  background: linear-gradient(rgb(19, 19, 19)0%, rgb(50, 51, 51)45%, rgb(255, 174, 0)100%);
+  padding-top: .5rem;
+
+  position: absolute;
+  top: 7rem;
+  right: 0;
+  z-index: 999;
+
+   display: none;
+}
+
+header nav#nav-esquerda ul.menuprincipal li{
+  margin: .5rem;
+}
+
+header nav#nav-esquerda ul.menu-principal li a{
+  font-size: 120%;
+}
+
+/* ELEMENTO FOOTER */
+
+@media screen and (max-width: 765px) {
+  footer div.footer-container div.footer-info{
+    width: 95%;
+    
+  }
+  
+}

@@ -1,0 +1,67 @@
+/* Animações */
+@keyframes headerH1-moverParaDireita {
+    0% {
+        opacity: 0;
+        transform: translateX(-75px);
+    }
+    70% {
+        transform: translateX(10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes headerH2-moverParaEsquerda {
+    0% {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    70% {
+        transform: translateX(-10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes HeaderA-moverParaCima {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Aplicando animações aos elementos */
+header div.chamada h1 {
+    animation: headerH1-moverParaDireita 2s ease-in-out;
+}
+
+header div.chamada h2 {
+    animation: headerH2-moverParaEsquerda 1.5s ease-in-out 0.5s;
+}
+
+header div.chamada a {
+    animation: HeaderA-moverParaCima 1s ease-out;
+}
+
+/* Rolagem suave com CSS */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Outros estilos */
+header nav#nav-esquerda ul.menu-principal li a:hover {
+    opacity: .6;
+    border-bottom: 2px solid #DB7F00;
+}
+
+footer div.footer-container div.footer-info nav.nav-footer ul li a:hover {
+    border: 2px solid #000;
+}

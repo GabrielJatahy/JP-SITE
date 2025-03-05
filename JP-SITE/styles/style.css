@@ -1,0 +1,303 @@
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-family: "Playfair Display", serif;
+  text-shadow: 4px 4px 6px #1F2326;
+  font-weight: 700;
+  font-size: max(44px, 5.2vw);
+}
+
+h2 {
+  font-family: "Playfair Display", serif;
+  text-shadow: 4px 4px 6px #464646;
+  font-weight: 700;
+  font-size: max(20px, 2.8vw);
+}
+
+div.chamada a {
+  font-size: max(16px, 1.8vw);
+  color: #fff;
+  text-decoration: none;
+  padding: 20px 80px;
+  border-radius: 50px;
+  font-weight: 600;
+  background: linear-gradient(135deg, #000000, #DB7F00, #DB7F00);
+  display: inline-block;
+  transition: .3s ease-in-out;
+
+  animation-name: HeaderA-moverParaCima;
+  animation-duration: 1s;
+  animation-delay: 1s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: backwards;
+  transition: .3s ease-in-out;
+
+}
+
+div.chamada a:hover {
+  opacity: .8;
+}
+
+/* HEADER */
+header {
+  max-width: 100%;
+  height: 90vh;
+  background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.2)) ,url('../imagens/haderCapaG.jpg.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+}
+
+/* NAVBAR */
+header nav#nav-esquerda {
+  width: 100%;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header nav#nav-esquerda div#logo {
+  max-width: 100px;
+  max-height: 120px;
+  margin-left: 5rem;
+}
+
+header nav#nav-esquerda div#logo img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+/* ÍCONES DO MENU */
+header nav#nav-esquerda ul#icone-menu {
+  display: none;
+}
+
+header nav#nav-esquerda ul#icone-menu li {
+  list-style: none;
+}
+
+header nav#nav-esquerda ul#icone-menu li ion-icon {
+  font-size: 50px;
+  color: #fff;
+  margin-right: 2rem;
+}
+
+/* MENU PRINCIPAL */
+header nav#nav-esquerda ul.menu-principal {
+  flex-direction: column;
+  width: 80%;
+  height: 70vh;
+  background: linear-gradient(rgb(19, 19, 19)0%, rgb(50, 51, 51)45%, rgb(255, 174, 0)100%);
+  padding-top: .5rem;
+  position: absolute;
+  top: 7rem;
+  right: 0;
+  z-index: 999;
+  display: none;
+}
+
+
+header nav#nav-esquerda ul.menu-principal li {
+  list-style: none;
+  margin-right: 2rem;
+}
+
+header nav#nav-esquerda ul.menu-principal li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 110%;
+  text-shadow: 4px 6px 10px #000;
+  padding-bottom: 10px;
+  transition: .3s ease-in-out;
+}
+
+header nav#nav-esquerda ul.menu-principal li a:hover {
+  opacity: .6;
+  border-bottom: 2px solid #DB7F00;
+}
+
+/* CHAMADA */
+header div.chamada {
+  position: absolute;
+  width: 100%;
+  height: 300px;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+header div.chamada h1 {
+  color: #f88e03;
+
+  animation-name: headerH1-moverParaDireita;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  
+
+}
+
+header div.chamada h2 {
+  color: #807e7d;
+  margin-bottom: 55px;
+
+  animation-name: headerH2-moverParaEsquerda;
+  animation-duration: 1.5s;
+  animation-delay: 0.5s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: backwards;
+  
+}
+
+/* SEÇÃO SOBRE */
+section.sobre {
+  max-width: 100%;
+  padding: 60px 0;
+  text-align: center;
+}
+
+/* IMAGENS REDONDAS E SOMBRA LARANJA */
+section.sobre img {
+  border-radius: 50%; /* Borda arredondada */
+  box-shadow: 0 0 15px 5px #DB7F00; /* Sombra laranja */
+  border: 5px solid #DB7F00; /* Borda laranja */
+  width: 140px;
+  height: 140px;
+  object-fit: cover; /* Ajuste da imagem */
+}
+
+/* Seções Trabalhos e Parceiros */
+.trabalhos .featurette,
+.parceiros .featurette {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 40px;
+}
+
+/* Ajustes de ordem: Trabalhos com imagem à direita e Parceiros com imagem à esquerda */
+.trabalhos .featurette .texto {
+  order: 1;
+}
+
+.trabalhos .featurette .imagem {
+  order: 2;
+}
+
+.parceiros .featurette .imagem {
+  order: 1;
+}
+
+.parceiros .featurette .texto {
+  order: 2;
+}
+
+/* Estilos de imagem com bordas arredondadas e sombra laranja */
+.img-rounded-shadow {
+  border-radius: 50px;
+  box-shadow: 0 0 15px 5px #DB7F00;
+  width: 100%;
+  height: auto;
+  max-width: 1200px;
+}
+
+/* ELEMENTOS DO OOTER */
+
+footer{
+  width: 100%;
+  background: linear-gradient(#000000 0%, #DB8400 50%, #DB7F00 100%);
+  padding-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+footer div.footer-container{
+  width: 100%;
+  display: flex;
+  flex: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+footer div.footer-container div.logo-footer{
+  width: 150px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  cursor: pointer;
+}
+
+footer div.footer-container div.logo-footer img{
+  max-width: 100%;
+}
+
+footer div.footer-container div.footer-info{
+  width: 70%;
+  margin-bottom: 50px;
+  padding-top: 20px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+footer div.footer-container div.footer-info nav.nav-footer ul{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+}
+
+footer div.footer-container div.footer-info nav.nav-footer ul li{
+  list-style: none;
+  margin-bottom: 15px;
+}
+
+footer div.footer-container div.footer-info nav.nav-footer ul li a{
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 100%;
+
+  transition: .3 ease-out;
+}
+
+footer div.footer-container div.footer-info nav.nav-footer ul li a:hover{
+  border: 2px solid  #000;
+
+}
+
+footer div.footer-container div.footer-info div.redes-socias{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+footer div.footer-container div.footer-info div.redes-socias span {
+  font-family: 'Roboto', sans-serif;
+  color: #fff;
+  font-size: max(16px, 1.5vw);
+  margin-top: 15px;
+}
+
+footer div.footer-container div.footer-info div.redes-socias div.footer-img-redes{
+  max-width: 340px;
+}
+
+footer div.footer-container div.footer-info div.redes-socias div.footer-img-redes img{
+  max-width: 100%;
+}
+
+footer span.autorais{
+  color: #fff;
+  font-size: (14px, .8);
+  margin-top: 20px;
+}
+

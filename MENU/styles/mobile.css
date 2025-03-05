@@ -1,0 +1,45 @@
+@media screen and (max-width: 630px) {
+    /*MENU HAMBURGUER */
+    header nav#nav-esquerdo{
+        justify-content: space-between;
+    }
+
+    header nav#nav-esquerdo ul#icone-menu{
+        display: flex;
+    }
+
+    header nav#nav-esquerdo ul#icone-menu{
+        display: flex;
+    }
+
+    header nav#nav-esquerdo ul#icone-menu li#menuX{
+        display: none;
+    }
+
+/* MENU */
+
+    header nav#nav-esquerdo ul#menu-principal{
+        flex-direction: column;
+        width: 80%;
+        height: 85vh;
+        background: linear-gradient(rgb(4,157,217) 0%, rgb(54, 176, 224) 45%, rgb(60, 179, 113, .9) 100%);
+        padding-top: .5rem;
+        position: absolute;
+        top: 9.3rem;
+        right: 0;
+        z-index: 999;
+
+        display: none;
+    }
+
+    header nav#nav-esquerdo ul#menu-principal li{
+        margin: .5rem;
+        margin-left: 1rem;
+
+    }
+
+    header nav#nav-esquerdo ul#menu-principal li a{
+        font-size: 120%;
+
+    }
+}
